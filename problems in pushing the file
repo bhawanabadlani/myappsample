@@ -1,0 +1,28 @@
+I was not being able to push the file initially
+This was because i created a readme.md file in myappsample folder on the github browser
+so when i was trying to push the file into this repository, it was not being accepted,
+as my local repository did not have the readme.md file. Pushing the file would cause overlapping, so git didn't allow me to push
+
+solution
+I integrated my remote changes with the local one.
+For this Io followed the following steps:
+
+1)Refresh the tracking branch: git fetch origin master
+
+This command helps to copy the current remote repo to the local repo
+
+
+2)Rewrite the local changes: git rebase origin/master
+
+This integrates the remote changes with the our changes made in the local repo
+
+3)Try the push again: git push origin master
+
+Now the push operation works successfully. This is because
+initially, our changes would have replaced the changes made in the remote repo. 
+But now our rewritten local branch does not have that problem:
+it includes the remote repo changes exactly in the same places as they are already on the remote branch.
+
+https://blog.plover.com/prog/git-ff-error.html
+Follow 4,5,6 of the given link to understand better.
+
