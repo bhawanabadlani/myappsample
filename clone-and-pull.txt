@@ -1,9 +1,6 @@
-Further in the video, functions of clone and pull command were explained.
-When we want to pull a repository we can either download the zip file
-or we can clone the file into a folder by using the command
+Further in the video, functions of clone and pull command were explained. When we want to pull a repository we can either download the zip file or we can clone the file into a folder by using the command: 
 git clone <link of the repo to be downloaded>
 Note: open git bash from the new folder where repo is to be downloaded.
 
-If we want to pull the changes made by other developers, 
-then we have to run the pull command from git bash window from the original folder. 
+If we want to pull the changes made by other developers, then we have to run the pull command from git bash window from the original folder : 
 git pull origin master
